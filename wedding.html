@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <title>結婚頁面</title>
+    <link rel="stylesheet" href="./animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <style>
+        /* .parent {
+            width: 100vw;
+            height: 60vh;
+        }
+
+        .child {
+            width: 100%;
+            height: 100%; 
+            background-position: center;
+            background-size: cover;
+        }
+
+        #first-background{
+            background-image: url("img/first-background.jpg");
+        }
+        */
+        * {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        section {
+            height: 1000vh;
+        }
+
+        .bg {
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            z-index: -999;
+        }
+
+        #first-background {
+            background-image: url(./img/first-background.jpg);
+        }
+
+        #date {
+            width: 800px;
+        }
+
+        #walkingboy {
+            left: 16vw;
+            ;
+            top: 10vh;
+            height: 80%;
+        }
+
+        #walkinggirl {
+            left: 16vw;
+            height: 80%;
+            top: 10vh;
+        }
+
+        .paragraph {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 28px;
+        }
+
+        #first-paragraph1 {
+            left: 13vw;
+            top: 10vh;
+        }
+
+        #second-paragraph1 {
+            left: 13vw;
+            top: 10vh;
+        }
+
+        #second-paragraph2 {
+            left: 63vw;
+            top: 25vh;
+        }
+
+        #second-paragraph3 {
+            left: 18vw;
+            top: 40vh;
+        }
+
+        #third-paragraph1 {
+            left: 13vw;
+            top: 10vh;
+        }
+
+        #third-paragraph2 {
+            left: 63vw;
+            top: 25vh;
+        }
+
+        #third-paragraph3 {
+            left: 18vw;
+            top: 40vh;
+        }
+
+        .paragraph1 {
+            left: 13vw;
+            top: 10vh;
+        }
+
+        .paragraph2 {
+            left: 63vw;
+            top: 25vh;
+        }
+
+        #fifth-paragraph1 {
+            left: 63vw;
+            top: 13vh;
+        }
+
+        #fifth-paragraph2 {
+            left: 13vw;
+            top: 22vh;
+        }
+
+
+        #second-background {
+            background-image: url(./img/second-background.jpg);
+        }
+
+        #homePeople {
+            width: 70vw;
+            left: 15vw;
+            top: 22vh;
+        }
+
+        #third-background {
+            background-image: url(./img/third-background.jpg);
+        }
+
+        #forth-background {
+            background-image: url(./img/second-background.jpg);
+        }
+
+        #fifth-background {
+            background-image: url(./img/fifth-background.png);
+        }
+
+        #hospital {
+            background-image: url(./img/hospital.jpg);
+        }
+
+        .law {
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 28px;
+            width: 80%;
+            left: 10vw;
+            top: 3vw;
+            height: 77vh;
+        }
+
+        #fifth-icon1 {
+            width: 80vw;
+            left: 15vw;
+            top: 10vh;
+        }
+
+        #fifth-icon2 {
+            width: 80vw;
+            top: 10vh;
+        }
+        #sixth-icon1{
+            width: 30vw;
+            left: 50vw;
+            top: 54vh;
+        }
+        #sixth-icon2{
+            width: 27vw;
+            left: 37.5vw;
+        }
+        #ambulance{
+            width: 30vw;
+            top: 53vh;
+            left: 3vw;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <section>
+        <div id="first-section" class="parent">
+            <div id="first-background" class="child position-fixed">
+
+            </div>
+        </div>
+    </section> -->
+    <section>
+        <!-- 1-1 步入同居 -->
+        <div id="first-background" class="bg position-fixed section1"></div>
+        <div id="date">
+            <img src="./img/網頁設計與敘事.001.png" alt="散步女" class="position-fixed section1" id="walkinggirl">
+            <img src="./img/網頁設計與敘事.002.png" alt="散步男" class="position-fixed section1" id="walkingboy">
+            <span class="paragraph position-fixed section1" id="first-paragraph1">相愛的兩個人，決定互相扶持、度過一生。<br>
+                但（女名）和（男名）沒有「結婚」⋯⋯</span>
+        </div>
+        <div id="second-background" class="bg position-fixed  invisible">
+            <img src="./img/家中1-2.png" alt="" class="position-fixed  invisible" id="homePeople">
+        </div>
+        <!-- 1-2 家-->
+        <div id="home">
+
+            <span class="paragraph position-fixed section2 invisible" id="second-paragraph1">男：誒誒我們如果一起報稅，可以省一些錢誒！。<br>
+            </span>
+            <span class="paragraph position-fixed section2 invisible" id="second-paragraph2">女：但是我們不是法律上的夫妻，如果不特別額外舉證我們的關係，就不能這樣做了
+                <br>
+            </span>
+            <span class="paragraph position-fixed section2 invisible" id="second-paragraph3">男:是喔...好吧 <br>
+            </span>
+        </div>
+        <div id="second-background-law" class="position-fixed law invisible section2">
+            <p>現行稅制中，非配偶制度雖然可以用「受扶養之親屬」的身分選擇共同或分開申報，但必須額外舉證有同居的事實，來證明他們是以永久共同生活為目的組成一個家。
+            </p>
+            <p>相較於直接被視為一個家戶的配偶關係，沒有結婚的兩人需要負法律上的舉證義務。</p>
+        </div>
+        <!-- 1-3 家-->
+        <div id="1-3">
+            <span class="paragraph position-fixed section3 invisible" id="third-paragraph1">女：我把房子轉到你名下好了，這樣算起來稅可以繳少一些
+                <br>
+            </span>
+            <span class="paragraph position-fixed section3 invisible" id="third-paragraph2">男：真的嗎？那真是太好了！好啊
+                <br>
+            </span>
+            <span class="paragraph position-fixed section3 invisible" id="third-paragraph3">女：啊…我發現我剛剛沒有注意到土地增值稅跟贈與稅的問題...
+                <br>
+            </span>
+            <div id="third-background-law" class="position-fixed law invisible section3">
+                <p>夫妻在法律關係中被認為是ㄧ家戶單位，因此在不動產轉讓中也享有許多優惠。依據《土地稅法》、《遺產及贈與稅法》，配偶之間贈與土地可以申請不課徵土地增值稅；相互贈與之財產不計算贈與稅。
+                </p>
+            </div>
+        </div>
+        <!-- 1-4 戶政事務所-->
+
+        <div class="bg position-fixed section4 invisible" id="third-background">
+            <img src="./img/1-4小明小美登記.png" alt="" class="section4 invisible position-fixed" id="forth-icon">
+            <span class="paragraph position-fixed section4 invisible paragraph1" id="forth-paragraph1">女：親愛的，你要當爸爸了呢！
+                <br>
+            </span>
+            <span class="paragraph position-fixed section4 invisible paragraph2" id="forth-paragraph2">男：好！那我們先去辦理認領吧！這樣在法律上才是孩子的爸爸！
+                <br>
+            </span>
+            <div id="forth-background-law" class="position-fixed law invisible section4">
+                <p>在生父母未結婚的狀況下，小孩會是非婚生子女，在報戶口時會從母姓。除非未來生父與生母結婚、生父明確表示要認領此小孩，或是生父對於小孩有實質撫育行為這三個情況之一，否則這個小孩法律上跟真實的生父是沒有關係的。</p>
+            </div>
+        </div>
+
+        <!-- 1-5 在家照顧小孩-->
+
+        <div class="bg position-fixed section5 invisible" id="forth-background">
+            <img src="./img/1-5育嬰小明.png" alt="" class="section5 invisible position-fixed" id="fifth-icon1">
+            <img src="./img/1-5工作小美.png" alt="" class="section5 invisible position-fixed" id="fifth-icon2">
+            <span class="paragraph position-fixed section5 invisible " id="fifth-paragraph1">女：我去上班了喔～
+
+                <br>
+            </span>
+            <span class="paragraph position-fixed section5 invisible " id="fifth-paragraph2">男：好的，孩子就交給我照顧吧
+                <br>
+            </span>
+        </div>
+
+        <!-- 1-6車禍 -->
+        <div class="bg position-fixed section6 invisible" id="fifth-background">
+            <img src="./img/1-6車子.png" alt="" class="section6 invisible position-fixed" id="sixth-icon1">
+            <img src="./img/1-6車子 (1).png" alt="" class="section6 invisible position-fixed" id="sixth-icon2">
+            <img src="./img/1-6救護車.png" alt="" class="section6 invisible position-fixed" id="ambulance">
+            <span class="paragraph position-fixed section6 invisible paragraph1" id="sixth-paragraph1">小美發生了車禍
+...
+            </span>
+
+            
+
+        </div>
+
+
+
+
+        <div class="bg position-fixed section6 invisible" id="hospital"></div>
+
+
+
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- 特效製作 -->
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                let scrollTop = $(document).scrollTop();
+                //第一個背景放大
+                $("#first-background").css("transform", "scale(" + (1 + scrollTop * 0.001) + ")");
+                //1-2
+                if (scrollTop > 600) {
+                    $(".section1").addClass("animated fadeOut");
+                    $('#second-background,#homePeople').removeClass('invisible');
+                    $('#second-background,#homePeople').addClass('animated fadeIn');
+                }
+                //二景第一句話
+                if (scrollTop > 800) {
+
+                    $('#second-paragraph1').removeClass('invisible');
+                    $('#second-paragraph1').addClass('animated fadeIn');
+                }
+                //二景第二句話
+                if (scrollTop > 1000) {
+
+                    $('#second-paragraph2').removeClass('invisible');
+                    $('#second-paragraph2').addClass('animated fadeIn');
+                }
+                //二景第三句話
+                if (scrollTop > 1200) {
+
+                    $('#second-paragraph3').removeClass('invisible');
+                    $('#second-paragraph3').addClass('animated fadeIn');
+                }
+                //二景法律
+                if (scrollTop > 1400) {
+
+                    $('#second-background-law').removeClass('invisible');
+                    $('#second-background-law').addClass('animated fadeIn');
+                }
+                //1-3
+                if (scrollTop > 1700) {
+                    $(".section2").addClass("animated fadeOut");
+                }
+                //1-3第一句
+                if (scrollTop > 1800) {
+                    $('#third-paragraph1').removeClass('invisible');
+                    $('#third-paragraph1').addClass('animated fadeIn');
+                }
+                //1-3第二句
+                if (scrollTop > 2000) {
+                    $('#third-paragraph2').removeClass('invisible');
+                    $('#third-paragraph2').addClass('animated fadeIn');
+                }
+                //1-3第三句
+                if (scrollTop > 2200) {
+                    $('#third-paragraph3').removeClass('invisible');
+                    $('#third-paragraph3').addClass('animated fadeIn');
+                }
+                //1-3law
+                if (scrollTop > 2400) {
+                    $('#third-background-law').removeClass('invisible');
+                    $('#third-background-law').addClass('animated fadeIn');
+                }
+                //1-4
+                if (scrollTop > 3000) {
+                    $(".section3,#second-background,#homePeople").addClass("animated fadeOut");
+                    $('#third-background,#forth-icon').removeClass('invisible');
+                    $('#third-background,#forth-icon').addClass('animated fadeIn');
+                }
+                //1-4第一句
+                if (scrollTop > 3200) {
+
+                    $('#forth-paragraph1').removeClass('invisible');
+                    $('#forth-paragraph1').addClass('animated fadeIn');
+                }
+                //1-4第二句
+                if (scrollTop > 3450) {
+
+                    $('#forth-paragraph2').removeClass('invisible');
+                    $('#forth-paragraph2').addClass('animated fadeIn');
+                }
+                //1-4 law
+                if (scrollTop > 3650) {
+
+                    $('#forth-background-law').removeClass('invisible');
+                    $('#forth-background-law').addClass('animated fadeIn');
+                }
+                //1-5 
+                if (scrollTop > 3900) {
+                    $(".section4").addClass("animated fadeOut");
+                    $('#forth-background,#fifth-icon1,#fifth-icon2').removeClass('invisible');
+                    $('#forth-background,#fifth-icon1,#fifth-icon2').addClass('animated fadeIn');
+                }
+                //1-5第一句
+                if (scrollTop > 4150) {
+
+                    $('#fifth-paragraph1').removeClass('invisible');
+                    $('#fifth-paragraph1').addClass('animated fadeIn');
+                }
+                //1-5第二句
+
+                if (scrollTop > 4400) {
+
+                    $('#fifth-paragraph2').removeClass('invisible');
+                    $('#fifth-paragraph2').addClass('animated fadeIn');
+                }
+                //1-6
+                if (scrollTop > 4650) {
+                    $(".section5").addClass("animated fadeOut");
+                    $('#fifth-background').removeClass('invisible');
+                    $('#fifth-background').addClass('animated fadeIn');
+                    $('#sixth-icon1').removeClass('invisible');
+                    $('#sixth-icon1').addClass('animated fadeInLeft');
+                    $('#sixth-icon2').removeClass('invisible');
+                    $('#sixth-icon2').addClass('animated fadeInDown');
+                }
+                //1-6唯一一句
+                if (scrollTop > 4850) {
+                    
+                    $('#sixth-paragraph1').removeClass('invisible');
+                    $('#sixth-paragraph1').addClass('animated fadeIn');
+                    $('#ambulance').removeClass('invisible');
+                    $('#ambulance').addClass('animated fadeInLeft');
+                }
+                //第四個換景
+                if (scrollTop > 5500) {
+                    $(".section4").addClass("animated fadeOut");
+                    $('.section5').removeClass('invisible');
+                    $('.section5').addClass('animated fadeIn');
+                }
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
