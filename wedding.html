@@ -47,7 +47,7 @@
         }
 
         #first-background {
-            background-image: url(./img/first-background.jpg);
+            background-image: url(./img/1-1.jpg);
         }
 
         #date {
@@ -160,7 +160,7 @@
         .law {
             padding: 60px;
             /* padding-top: 100px; */
-            background-color: rgba(0, 0, 0);
+            background-color: black;
             color: white;
             font-size: 36px;
             width: 80%;
@@ -312,7 +312,7 @@
             <img src="./img/網頁設計與敘事.001.png" alt="散步女" class="position-fixed section1" id="walkinggirl">
             <img src="./img/網頁設計與敘事.002.png" alt="散步男" class="position-fixed section1" id="walkingboy">
             <span class="paragraph position-fixed section1" id="first-paragraph1">相愛的兩個人，決定互相扶持、度過一生。<br>
-                但（女名）和（男名）沒有「結婚」⋯⋯</span>
+                但小美和小明沒有「結婚」⋯⋯</span>
         </div>
         <div id="second-background" class="bg position-fixed  invisible">
             <img src="./img/家中1-2.png" alt="" class="position-fixed  invisible" id="homePeople">
@@ -431,7 +431,9 @@
         <span class="paragraph position-fixed section10 invisible" id="tenth-paragraph2">此時，小美的家人決定起訴小明，爭取孩子的撫養權。<br> 沒有錢、沒有工作的小明，不知如何是好
         </span>
         <div id="tenth-law" class="position-fixed law invisible section10">
-            <p>其實法律上並沒有在醫療上探視權的規定，主要端看每家醫院自己的規定。若兩人未結婚，為了避免事後醫療糾紛，在病況緊急時，醫院是有可能會拒絕親屬以外的人探視。</p>
+            <p>在一般婚姻關係解消（離婚或一方死亡），未約定財產制時，財產較少的一方可以向財產較多的一方請求剩餘財產差額分配。這條法律規定是將為了合理評價雙方對於婚姻的貢獻。
+                倘若未有婚姻關係，僅有同居關係時，，倘若雙方分手，這時並沒有剩餘財產差額分配請求權。倘若一方死亡，這是另一方僅能請求遺產酌給，並沒有剩餘財產差額分配請求以及繼承權。
+                </p>
         </div>
         <div id="tenth-law2" class="position-fixed law invisible section10">
             <p>法律上小孩的監護權，多以小孩之最佳利益來做考量，小孩與生父母的親密度以及熟悉的生長環境固然是法院考量小孩的重要利益之一。但若生父母未有工作能力，或是沒有財產，無法給小孩一個基本的物質生活，則法院亦是有可能將小孩撫養權判給生父母以外之親屬。</p>
@@ -575,7 +577,7 @@
                 //1-6
                 if (scrollTop > 4650) {
                     $(".section5").addClass("animated fadeOut");
-                    $('#fifth-icon2').addClass('fadeOutRight');
+                    $('#fifth-icon2').addClass('fadeOutRight slower');
                     $('#fifth-background').removeClass('invisible');
                     $('#fifth-background').addClass('animated fadeIn');
                     $('#sixth-icon1').removeClass('invisible');
