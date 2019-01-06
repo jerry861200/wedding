@@ -35,7 +35,7 @@
         }
 
         section {
-            height: 1000vh;
+            height: 1500vh;
         }
 
         .bg {
@@ -71,6 +71,8 @@
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             font-size: 28px;
+            padding: 16px;
+            
         }
 
         #first-paragraph1 {
@@ -156,14 +158,15 @@
         }
 
         .law {
-            padding: 30px;
-            background-color: rgba(0, 0, 0, 0.8);
+            padding: 60px;
+            /* padding-top: 100px; */
+            background-color: rgba(0, 0, 0);
             color: white;
-            font-size: 28px;
+            font-size: 36px;
             width: 80%;
             left: 10vw;
-            top: 3vw;
-            height: 77vh;
+            top: 12vh;
+            min-height: 50vh;
         }
 
         #fifth-icon1 {
@@ -176,19 +179,113 @@
             width: 80vw;
             top: 10vh;
         }
-        #sixth-icon1{
+
+        #sixth-paragraph1{
+            font-size: 36px;
+        }
+
+        #sixth-icon1 {
             width: 30vw;
             left: 50vw;
             top: 54vh;
         }
-        #sixth-icon2{
+
+        #sixth-icon2 {
             width: 27vw;
             left: 37.5vw;
         }
-        #ambulance{
+
+        #ambulance {
             width: 30vw;
             top: 53vh;
-            left: 3vw;
+            left: 6vw;
+        }
+
+        #doctor {
+            width: 80%;
+            left: 22vw;
+            top: 15vh;
+        }
+
+        #seventh-man {
+            width: 80%;
+            left: -33vw;
+            top: 9vh;
+
+        }
+
+        #seventh-man2{
+            width: 80%;
+            left: 30vw;
+            top: 9vh;
+
+        }
+        #seventh-paragraph1 {
+            left: 52vw;
+            top: 5vh;
+        }
+
+        #seventh-paragraph2 {
+            left: 5vw;
+            top: 8vh;
+        }
+
+        #seventh-paragraph3 {
+            left: 54vw;
+            top: 16vh;
+        }
+
+        #seventh-paragraph4 {
+            left: 8vw;
+            top: 22vh;
+        }
+
+        #agreement1 {
+            width: 55vw;
+            left: 33vw;
+            top: 35vh;
+        }
+
+        #agreement2 {
+            width: 55vw;
+            left: 17vw;
+            top: 35vh;
+        }
+
+        #agreement3 {
+            width: 55vw;
+            left: 0vw;
+            top: 35vh;
+        }
+
+        .parents{
+            width: 60vw;
+            top: 20vh;
+        }
+       
+        #mom{
+            left: -10vw;
+        }
+        #eighth-paragraph1{
+            right: 10vw;
+            top: 5vh;
+        }
+        #eighth-paragraph2{
+            left: 10vw;
+            top: 16vh;
+        }  
+
+        #ninth-paragraph1{
+            top: 10vh;
+            left: 20vw;
+        }
+        #tenth-paragraph1{
+            top: 10vh;
+            left: 10vw;
+        }
+        #tenth-paragraph2{
+            top: 35vh;
+            right: 10vw;
         }
     </style>
 </head>
@@ -279,21 +376,65 @@
             <img src="./img/1-6車子.png" alt="" class="section6 invisible position-fixed" id="sixth-icon1">
             <img src="./img/1-6車子 (1).png" alt="" class="section6 invisible position-fixed" id="sixth-icon2">
             <img src="./img/1-6救護車.png" alt="" class="section6 invisible position-fixed" id="ambulance">
-            <span class="paragraph position-fixed section6 invisible paragraph1" id="sixth-paragraph1">小美發生了車禍
-...
+            <span class="paragraph position-fixed section6 invisible paragraph1" id="sixth-paragraph1">然而有天小美發生了車禍
+                ...
             </span>
 
-            
+
 
         </div>
 
 
+        <!-- 1-7 -->
 
+        <div class="bg position-fixed section8 invisible" id="hospital">
+            <img src="./img/1-7醫生.png" alt="" class="section7 invisible position-fixed" id="doctor">
+            <img src="./img/1-9被關在外面的男.png" class="section7 invisible position-fixed" id="seventh-man">
+            <img src="./img/1-7手術同意書沒名字.png" alt="" class="section7 invisible position-fixed agreement" id="agreement1">
+            <img src="./img/1-7手術同意書有男女朋友.png" alt="" class="section7 invisible position-fixed agreement" id="agreement2">
+            <img src="./img/1-7手術同意書打叉叉.png" alt="" class="section7 invisible position-fixed agreement" id="agreement3">
 
-        <div class="bg position-fixed section6 invisible" id="hospital"></div>
+            <span class="paragraph position-fixed section7 invisible" id="seventh-paragraph1">醫生：現在情況很危急，必須簽手術同意書</span>
+            <span class="paragraph position-fixed section7 invisible" id="seventh-paragraph2">男：我來吧，我們有了孩子，也有共同生活</span>
+            <span class="paragraph position-fixed section7 invisible" id="seventh-paragraph3">醫生：但是這樣沒有一個保障 <br>如果有什麼糾紛的話情況會變得很複雜</span>
+            <span class="paragraph position-fixed section7 invisible" id="seventh-paragraph4">男：好的，不然...不然我請他的父親來簽吧！
+            </span>
+            <div id="seventh-law" class="position-fixed law invisible section7">
+                <p>病情告知權與醫療代理決定權（如病患昏迷時醫療處置決策）等權力，醫療法（第63、64、65、74、75和81條）明文包含關係人亦享有，而且這個關係人不以配偶為限，包括同性伴侶、同居人甚至摯友都可以算。但是在醫療實務上，醫院為了避免事後醫療訴訟爭議或是第一線人員法規詮釋不同，多半可能還是會優先詢問親屬。</p>
+            </div>
+        </div>
 
-
-
+        <!-- 1-8 -->
+        <img src="./img/1-9崩潰男.png" class="section8 invisible position-fixed" id="seventh-man2">
+        <img src="./img/1-8生氣媽媽.png" alt="" class="section8 invisible position-fixed parents" id="mom">
+        <img src="./img/1-8生氣爸爸.png" alt="" class="section8 invisible position-fixed parents" id="dad">
+        <span class="paragraph position-fixed section8 invisible" id="eighth-paragraph1">送到醫院後進入加護病房，但是因為小明並不是配偶，沒有探視權。...             </span>
+            <span class="paragraph position-fixed section8 invisible" id="eighth-paragraph2">家人：就是你害小美出車禍，不要進來了。
+                </span>
+        <div id="eighth-law" class="position-fixed law invisible section8">
+            <p>其實法律上並沒有在醫療上探視權的規定，主要端看每家醫院自己的規定。若兩人未結婚，為了避免事後醫療糾紛，在病況緊急時，醫院是有可能會拒絕親屬以外的人探視。</p>
+        </div>
+        <!-- 1-9 -->
+        <span  class="paragraph position-fixed section9 invisible" id="ninth-paragraph1">最終，小美不治身亡。不被小美家人認同的小明沒有任何與她告別的機會
+        </span>
+        <!-- 1-10 -->
+        <span class="paragraph position-fixed section10 invisible" id="tenth-paragraph1">因為沒有婚姻關係，無法向小美請求剩餘財產分配。<br> 多年來為了共同生活所付出的勞動力付諸流水，<br> 重新進入職場也因為幾年來缺乏經驗而困難重重。
+        </span>
+        <span class="paragraph position-fixed section10 invisible" id="tenth-paragraph2">此時，小美的家人決定起訴小明，爭取孩子的撫養權。<br> 沒有錢、沒有工作的小明，不知如何是好
+        </span>
+        <div id="tenth-law" class="position-fixed law invisible section10">
+            <p>其實法律上並沒有在醫療上探視權的規定，主要端看每家醫院自己的規定。若兩人未結婚，為了避免事後醫療糾紛，在病況緊急時，醫院是有可能會拒絕親屬以外的人探視。</p>
+        </div>
+        <div id="tenth-law2" class="position-fixed law invisible section10">
+            <p>法律上小孩的監護權，多以小孩之最佳利益來做考量，小孩與生父母的親密度以及熟悉的生長環境固然是法院考量小孩的重要利益之一。但若生父母未有工作能力，或是沒有財產，無法給小孩一個基本的物質生活，則法院亦是有可能將小孩撫養權判給生父母以外之親屬。</p>
+        </div>
+        <!-- final -->
+        <div id="final-paragraph" class="position-fixed law invisible section-fianl">
+            <p>法律上小孩的監護權，多以小孩之最佳利益來做考量，小孩與生父母的親密度以及熟悉的生長環境固然是法院考量小孩的重要利益之一。但若生父母未有工作能力，或是沒有財產，無法給小孩一個基本的物質生活，則法院亦是有可能將小孩撫養權判給生父母以外之親屬。</p>
+        </div>
+        <div id="tenth-law2" class="position-fixed law invisible section-final">
+            <p>法律上小孩的監護權，多以小孩之最佳利益來做考量，小孩與生父母的親密度以及熟悉的生長環境固然是法院考量小孩的重要利益之一。但若生父母未有工作能力，或是沒有財產，無法給小孩一個基本的物質生活，則法院亦是有可能將小孩撫養權判給生父母以外之親屬。</p>
+        </div>
     </section>
 
 
@@ -310,6 +451,7 @@
         $(function () {
             $(window).scroll(function () {
                 let scrollTop = $(document).scrollTop();
+                console.log(scrollTop);
                 //第一個背景放大
                 $("#first-background").css("transform", "scale(" + (1 + scrollTop * 0.001) + ")");
                 //1-2
@@ -421,19 +563,97 @@
                 }
                 //1-6唯一一句
                 if (scrollTop > 4850) {
-                    
+
                     $('#sixth-paragraph1').removeClass('invisible');
                     $('#sixth-paragraph1').addClass('animated fadeIn');
                     $('#ambulance').removeClass('invisible');
                     $('#ambulance').addClass('animated fadeInLeft');
                 }
-                //第四個換景
-                if (scrollTop > 5500) {
-                    $(".section4").addClass("animated fadeOut");
-                    $('.section5').removeClass('invisible');
-                    $('.section5').addClass('animated fadeIn');
+                //1-7
+                if (scrollTop > 5100) {
+                    $(".section6").addClass("animated fadeOut");
+                    $('#hospital,#doctor,#seventh-man').removeClass('invisible');
+                    $('#hospital,#doctor,#seventh-man').addClass('animated fadeIn');
                 }
 
+                // 1-7第一句
+                if (scrollTop > 5300) {
+
+                    $('#seventh-paragraph1,#agreement1').removeClass('invisible');
+                    $('#seventh-paragraph1,#agreement1').addClass('animated fadeIn');
+                }
+                //1-7第二句
+                if (scrollTop > 5500) {
+                    $("#agreement1").addClass("animated fadeOut");
+                    $('#seventh-paragraph2,#agreement2').removeClass('invisible');
+                    $('#seventh-paragraph2,#agreement2').addClass('animated fadeIn');
+                }
+                //1-7第三句
+                if (scrollTop > 5700) {
+
+                    $('#seventh-paragraph3').removeClass('invisible');
+                    $('#seventh-paragraph3').addClass('animated fadeIn');
+                }
+                //1-7第四句
+                if (scrollTop > 5900) {
+                    $("#agreement2").addClass("animated fadeOut");
+                    $('#seventh-paragraph4,#agreement3').removeClass('invisible');
+                    $('#seventh-paragraph4,#agreement3').addClass('animated fadeIn');
+                }
+                //1-7 law
+                if (scrollTop > 6100) {
+                    
+                    $('#seventh-law').removeClass('invisible');
+                    $('#seventh-law').addClass('animated fadeIn');
+                }
+                //1-8
+                if (scrollTop > 6350) {
+                    $(".section7").addClass("animated fadeOut");  
+                    $('#seventh-man2').removeClass('invisible');
+                    $('#seventh-man2').addClass('animated fadeInRight');
+                    $('.parents').removeClass('invisible');
+                    $('.parents').addClass('animated fadeInLeft');
+                    $('#eighth-paragraph1').addClass('animated fadeIn');
+                    $('#eighth-paragraph1').removeClass('invisible');
+                }
+               if(scrollTop > 6550) {
+                   $('#eighth-paragraph2').removeClass('invisible');
+                   $('#eighth-paragraph2').addClass('animated fadeIn');
+               }
+               if(scrollTop > 6800) {
+                $('#eighth-law').removeClass('invisible');
+                   $('#eighth-law').addClass('animated fadeIn');
+               }
+               //1-9
+               if (scrollTop > 7000) {
+                    $(".section8").addClass("animated fadeOut");
+                    $('#ninth-paragraph1').removeClass('invisible');
+                    $('#ninth-paragraph1').addClass('animated fadeIn');
+                }
+                //1-10
+                if (scrollTop > 7300) {
+                    $(".section9").addClass("animated fadeOut");
+                    $('#tenth-paragraph1').removeClass('invisible');
+                    $('#tenth-paragraph1').addClass('animated fadeIn');
+                }
+                //1-10 第二句
+                if (scrollTop > 7550) {
+                   
+                    $('#tenth-paragraph2').removeClass('invisible');
+                    $('#tenth-paragraph2').addClass('animated fadeIn');
+                }
+                //1-10 tenth-law1
+                if (scrollTop > 7800) {
+                   
+                   $('#tenth-law').removeClass('invisible');
+                   $('#tenth-law').addClass('animated fadeIn');
+               }
+               // 1-10 tenth-law2
+               if (scrollTop > 8100) {
+                    $('#tenth-law').addClass('fadeOut');
+                   $('#tenth-law2').removeClass('invisible');
+                   $('#tenth-law2').addClass('animated fadeIn');
+               }
             });
         });
     </script>
