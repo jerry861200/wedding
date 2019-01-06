@@ -35,7 +35,7 @@
         }
 
         section {
-            height: 1500vh;
+            height: 1600vh;
         }
 
         .bg {
@@ -172,12 +172,12 @@
         #fifth-icon1 {
             width: 80vw;
             left: 15vw;
-            top: 10vh;
+            top: 13vh;
         }
 
         #fifth-icon2 {
             width: 80vw;
-            top: 10vh;
+            top: 13vh;
         }
 
         #sixth-paragraph1{
@@ -205,6 +205,13 @@
             width: 80%;
             left: 22vw;
             top: 15vh;
+        }
+        
+        #fifth-paragraph1{
+            top: 8vh;
+        }
+        #fifth-paragraph2{
+            top: 13vh;
         }
 
         #seventh-man {
@@ -415,6 +422,7 @@
             <p>其實法律上並沒有在醫療上探視權的規定，主要端看每家醫院自己的規定。若兩人未結婚，為了避免事後醫療糾紛，在病況緊急時，醫院是有可能會拒絕親屬以外的人探視。</p>
         </div>
         <!-- 1-9 -->
+        <img src="./img/1-9.jpg" alt="葬禮" class="bg position-fixed section9 invisible">
         <span  class="paragraph position-fixed section9 invisible" id="ninth-paragraph1">最終，小美不治身亡。不被小美家人認同的小明沒有任何與她告別的機會
         </span>
         <!-- 1-10 -->
@@ -428,13 +436,25 @@
         <div id="tenth-law2" class="position-fixed law invisible section10">
             <p>法律上小孩的監護權，多以小孩之最佳利益來做考量，小孩與生父母的親密度以及熟悉的生長環境固然是法院考量小孩的重要利益之一。但若生父母未有工作能力，或是沒有財產，無法給小孩一個基本的物質生活，則法院亦是有可能將小孩撫養權判給生父母以外之親屬。</p>
         </div>
+        <div id="tenth-law3" class="position-fixed law invisible section10">
+            <p>這麼多的悲劇都源自於他們沒有結婚。</p>
+        </div>
+        
         <!-- final -->
-        <div id="final-paragraph" class="position-fixed law invisible section-fianl">
-            <p>法律上小孩的監護權，多以小孩之最佳利益來做考量，小孩與生父母的親密度以及熟悉的生長環境固然是法院考量小孩的重要利益之一。但若生父母未有工作能力，或是沒有財產，無法給小孩一個基本的物質生活，則法院亦是有可能將小孩撫養權判給生父母以外之親屬。</p>
+        <img src="./img/1-11.jpg" alt="" class="bg position-fixed section11 invisible">
+        <img src="./img/結婚女A.png" alt="" class="position-fixed section11 invisible">
+        <img src="./img/結婚男Ｂ.png" alt="" class="position-fixed section11 invisible">
+        <div id="final-paragraph" class="position-fixed law invisible ">
+            <p>法律不應該將特定人的愛情排除於現有的婚姻保障制度，無論性別、職業任何條件都不應該限制婚姻的構成。</p>
         </div>
-        <div id="tenth-law2" class="position-fixed law invisible section-final">
-            <p>法律上小孩的監護權，多以小孩之最佳利益來做考量，小孩與生父母的親密度以及熟悉的生長環境固然是法院考量小孩的重要利益之一。但若生父母未有工作能力，或是沒有財產，無法給小孩一個基本的物質生活，則法院亦是有可能將小孩撫養權判給生父母以外之親屬。</p>
+        <div id="final-paragraph2" class="position-fixed law invisible section-final">
+            <p>同時我們也應該反思這些結婚才有的特權是不是排擠了選擇不想進入婚姻的其他人。
+            </p>
+            <p>
+                擇你所愛，不分異同。
+            </p>
         </div>
+        
     </section>
 
 
@@ -537,6 +557,7 @@
                     $(".section4").addClass("animated fadeOut");
                     $('#forth-background,#fifth-icon1,#fifth-icon2').removeClass('invisible');
                     $('#forth-background,#fifth-icon1,#fifth-icon2').addClass('animated fadeIn');
+
                 }
                 //1-5第一句
                 if (scrollTop > 4150) {
@@ -554,6 +575,7 @@
                 //1-6
                 if (scrollTop > 4650) {
                     $(".section5").addClass("animated fadeOut");
+                    $('#fifth-icon2').addClass('fadeOutRight');
                     $('#fifth-background').removeClass('invisible');
                     $('#fifth-background').addClass('animated fadeIn');
                     $('#sixth-icon1').removeClass('invisible');
@@ -627,8 +649,8 @@
                //1-9
                if (scrollTop > 7000) {
                     $(".section8").addClass("animated fadeOut");
-                    $('#ninth-paragraph1').removeClass('invisible');
-                    $('#ninth-paragraph1').addClass('animated fadeIn');
+                    $('.section9').removeClass('invisible');
+                    $('.section9').addClass('animated fadeIn');
                 }
                 //1-10
                 if (scrollTop > 7300) {
@@ -653,6 +675,25 @@
                     $('#tenth-law').addClass('fadeOut');
                    $('#tenth-law2').removeClass('invisible');
                    $('#tenth-law2').addClass('animated fadeIn');
+               }
+               if (scrollTop > 8400) {
+                    $('#tenth-law2').addClass('fadeOut');
+                   $('#tenth-law3').removeClass('invisible');
+                   $('#tenth-law3').addClass('animated fadeIn');
+               }
+               if (scrollTop > 8700) {
+                    $('.section10').addClass('fadeOut');
+                   $('.section11').removeClass('invisible');
+                   $('.section11').addClass('animated fadeIn');
+               }
+               if(scrollTop > 9000){
+                   $('#final-paragraph').removeClass('invisible');
+                   $('#final-paragraph').addClass('animated fadeIn');
+               }
+               if (scrollTop > 9300) {
+                    $('#final-paragraph').addClass('fadeOut');
+                   $('#final-paragraph2').removeClass('invisible');
+                   $('#final-paragraph2').addClass('animated fadeIn');
                }
             });
         });
